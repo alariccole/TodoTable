@@ -9,10 +9,9 @@
 #import "MyTableController.h"
 
 @implementation MyTableController
-
-- (id)initWithStyle:(UITableViewStyle)style
+-(id)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super initWithStyle:style];
+    self = [super initWithCoder:aDecoder];
     if (self) {
         // Custom the table
         
@@ -127,10 +126,7 @@
  static NSString *CellIdentifier = @"Cell";
  
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
- 
+
     // Configure the cell
     cell.textLabel.text = [object objectForKey:@"text"];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Priority: %@", [object objectForKey:@"priority"]];

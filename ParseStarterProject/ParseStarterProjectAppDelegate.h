@@ -2,15 +2,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class ParseStarterProjectViewController;
+//@class ParseStarterProjectViewController;
 
 @interface ParseStarterProjectAppDelegate : NSObject <UIApplicationDelegate> {
 
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, strong) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet ParseStarterProjectViewController *viewController;
+//@property (nonatomic, strong) IBOutlet ParseStarterProjectViewController *viewController;
 
 - (void)subscribeFinished:(NSNumber *)result error:(NSError *)error;
 

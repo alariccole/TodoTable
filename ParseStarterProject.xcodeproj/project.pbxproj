@@ -20,12 +20,10 @@
 		09ABC07C13A1D52D009C3FCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09ABC07A13A1D52D009C3FCF /* InfoPlist.strings */; };
 		09ABC07F13A1D52D009C3FCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ABC07E13A1D52D009C3FCF /* main.m */; };
 		09ABC08213A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ABC08113A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m */; };
-		09ABC08513A1D52E009C3FCF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09ABC08313A1D52D009C3FCF /* MainWindow.xib */; };
-		09ABC08813A1D52E009C3FCF /* ParseStarterProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ABC08713A1D52E009C3FCF /* ParseStarterProjectViewController.m */; };
-		09ABC08B13A1D52E009C3FCF /* ParseStarterProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09ABC08913A1D52E009C3FCF /* ParseStarterProjectViewController.xib */; };
 		09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF34B13D51C3F001BBCDB /* Security.framework */; };
 		2F75405D14AD470900C19149 /* MyTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F75405C14AD470900C19149 /* MyTableController.m */; };
 		2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCDD6AF14A573F500295AAC /* QuartzCore.framework */; };
+		6D23B3F414E5DCB400467CFF /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D23B3F314E5DCB400467CFF /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,14 +45,11 @@
 		09ABC07E13A1D52D009C3FCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09ABC08013A1D52D009C3FCF /* ParseStarterProjectAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseStarterProjectAppDelegate.h; sourceTree = "<group>"; };
 		09ABC08113A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseStarterProjectAppDelegate.m; sourceTree = "<group>"; };
-		09ABC08413A1D52E009C3FCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		09ABC08613A1D52E009C3FCF /* ParseStarterProjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseStarterProjectViewController.h; sourceTree = "<group>"; };
-		09ABC08713A1D52E009C3FCF /* ParseStarterProjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseStarterProjectViewController.m; sourceTree = "<group>"; };
-		09ABC08A13A1D52E009C3FCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ParseStarterProjectViewController.xib; sourceTree = "<group>"; };
 		09BEF34B13D51C3F001BBCDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2F75405B14AD470900C19149 /* MyTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableController.h; sourceTree = "<group>"; };
 		2F75405C14AD470900C19149 /* MyTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableController.m; sourceTree = "<group>"; };
 		2FCDD6AF14A573F500295AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6D23B3F314E5DCB400467CFF /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +77,6 @@
 		09ABC06213A1D52D009C3FCF = {
 			isa = PBXGroup;
 			children = (
-				2FCDD6AF14A573F500295AAC /* QuartzCore.framework */,
 				09ABC07713A1D52D009C3FCF /* ParseStarterProject */,
 				09ABC07013A1D52D009C3FCF /* Frameworks */,
 				09ABC06E13A1D52D009C3FCF /* Products */,
@@ -102,6 +96,7 @@
 			children = (
 				094AC9FF14367ACD008398F8 /* Parse.framework */,
 				099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */,
+				2FCDD6AF14A573F500295AAC /* QuartzCore.framework */,
 				09BEF34B13D51C3F001BBCDB /* Security.framework */,
 				095ACE8513C68EA300566243 /* AudioToolbox.framework */,
 				092354B613A1D83C00DA740F /* MobileCoreServices.framework */,
@@ -118,12 +113,9 @@
 		09ABC07713A1D52D009C3FCF /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				6D23B3F314E5DCB400467CFF /* Storyboard.storyboard */,
 				09ABC08013A1D52D009C3FCF /* ParseStarterProjectAppDelegate.h */,
 				09ABC08113A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m */,
-				09ABC08313A1D52D009C3FCF /* MainWindow.xib */,
-				09ABC08613A1D52E009C3FCF /* ParseStarterProjectViewController.h */,
-				09ABC08713A1D52E009C3FCF /* ParseStarterProjectViewController.m */,
-				09ABC08913A1D52E009C3FCF /* ParseStarterProjectViewController.xib */,
 				09ABC07813A1D52D009C3FCF /* Supporting Files */,
 				2F75405B14AD470900C19149 /* MyTableController.h */,
 				2F75405C14AD470900C19149 /* MyTableController.m */,
@@ -194,9 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09ABC07C13A1D52D009C3FCF /* InfoPlist.strings in Resources */,
-				09ABC08513A1D52E009C3FCF /* MainWindow.xib in Resources */,
-				09ABC08B13A1D52E009C3FCF /* ParseStarterProjectViewController.xib in Resources */,
 				09144A7313C2997E00388B00 /* Entitlements.plist in Resources */,
+				6D23B3F414E5DCB400467CFF /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +200,6 @@
 			files = (
 				09ABC07F13A1D52D009C3FCF /* main.m in Sources */,
 				09ABC08213A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m in Sources */,
-				09ABC08813A1D52E009C3FCF /* ParseStarterProjectViewController.m in Sources */,
 				2F75405D14AD470900C19149 /* MyTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,22 +213,6 @@
 				09ABC07B13A1D52D009C3FCF /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		09ABC08313A1D52D009C3FCF /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09ABC08413A1D52E009C3FCF /* en */,
-			);
-			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		09ABC08913A1D52E009C3FCF /* ParseStarterProjectViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09ABC08A13A1D52E009C3FCF /* en */,
-			);
-			name = ParseStarterProjectViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +267,7 @@
 				GCC_PREFIX_HEADER = "ParseStarterProject/ParseStarterProject-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "ParseStarterProject/ParseStarterProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -301,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,6 +287,7 @@
 				GCC_PREFIX_HEADER = "ParseStarterProject/ParseStarterProject-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "ParseStarterProject/ParseStarterProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

@@ -2,27 +2,27 @@
 
 #import "Parse/Parse.h"
 #import "ParseStarterProjectAppDelegate.h"
-#import "ParseStarterProjectViewController.h"
+//#import "ParseStarterProjectViewController.h"
 #import "MyTableController.h"
 
 @implementation ParseStarterProjectAppDelegate
 
 @synthesize window=_window;
 
-@synthesize viewController=_viewController;
+//@synthesize viewController=_viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // ****************************************************************************
     // Uncomment and fill in with your Parse credentials:
-    [Parse setApplicationId:@"APPLICATION_ID" clientKey:@"CLIENT_KEY"];
+    [Parse setApplicationId:@"ID" clientKey:@"CLIENT"];
 
     // Override point for customization after application launch.
 
-    MyTableController *controller = [[MyTableController alloc] init];
-    
-    self.window.rootViewController = controller;
-    [self.window makeKeyAndVisible];
+//    MyTableController *controller = [[MyTableController alloc] init];
+//    
+//    self.window.rootViewController = controller;
+//    [self.window makeKeyAndVisible];
     
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
                                                     UIRemoteNotificationTypeAlert|
@@ -115,11 +115,5 @@
     }
 }
 
-- (void)dealloc
-{
-    [_window release];
-    [_viewController release];
-    [super dealloc];
-}
 
 @end
